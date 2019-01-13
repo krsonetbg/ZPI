@@ -1,12 +1,26 @@
 \chapter{Wstęp}
 \section{Karta projektu}
+\begin{tabular}{ |l|l| }
+\hline
+\multicolumn{2}{ |c| }{Karta projektu} \\
+\hline
+Nazwa projektu/ Project name: & ADAS Integration System \\ \hline
+\multirow{1}{*}{Przygotowali / Prepared by:} & - \\ \hline
+\multirow{1}{*}{Data rozpoczęcia / Launch date:} & 11.12.18 \\ \hline
+\multirow{1}{*}{Wersja / Version:} &  1.01 \\ \hline
+\multirow{1}{*}{Sponsor:}  & SensorTech \\ \hline
+\multirow{1}{*}{Kierownik Projektu / Project Manager} & Glen Alen \\ \hline
+\multirow{1}{*}{Beneficjent / Beneficiary:} & SensorTech \\ \hline
+\multirow{1}{*}{Pozostali interesariusze / Other stakeholders:} & - \\ \hline
+\end{tabular}
+
 \subsection{Opis projektu (Project summary)}
 Firma:
 Projekt realizowany przez firmę ''SensorTech'' będącą liderem branży automotive z dziedziny sensoryki.
 Kontekst:
 Branża automotive posługuje się licznymi sensorami, które działają niezależnie od siebie, jendak jednym z kluczowych aspektów rozwoju pojazdów autonomicznych jest integracja tych sensorów.
 \subsection{Cele (Objectives)}
-Celem projektu jest przygotowanie systemu, który integruje pracę sensorów wizyjnych (w szczególności kamer) z platformą sprzętową "automotive grade" odpowiedzialną za realizację algorytmów i obliczeń, co pozwoli poprawić funkcjonowanie zaawansowanych systemów wspomagania kierowcy (ADAS). 
+Celem projektu jest przygotowanie systemu, który integruje pracę sensorów wizyjnych (w szczególności kamer) z platformą sprzętową ''automotive grade'' odpowiedzialną za realizację algorytmów i obliczeń, co pozwoli poprawić funkcjonowanie zaawansowanych systemów wspomagania kierowcy (ADAS). 
 \subsection{Wstępny zakres projektu (Initial scope)}
 System będzie miał za zadanie wysyłać do głównego modułu elektronicznego samochodu (ECU) informację dotyczącą zidentyfikowanego obiektu (zadanie klayfikacyjne sieci neuronowej, realizowane na platformie automotive grade) oraz odległości od niego (wyznaczanej za pośrednictwem kamer stereowizyjnych). Będzie on w pełni kompatybilny z każdym nowoczesnym samochodem dzięki dystrybucji danych poprzez powszechnie wykorzystywane magistrale. 
 \subsection{Zespół (Team)}
@@ -53,9 +67,19 @@ W trakcie realizacji projektu należy wziąć pod uwagę następujące czynniki 
 \item[•] Niedostateczna wiedza członków zespołu
 \end{itemize}
 \subsection{Budżet (Budget)}
-
-
+280 000 PLN\newline
+\begin{tabular}{ |l|l| }
+\hline
+\multicolumn{2}{ |c| }{Budżet} \\
+\hline
+Zatwierdzone przez Sponsora / Sponsor sign off & Zatwierdzone przez PM’a / PM sign off: \\ \hline
+\end{tabular}
 \chapter{Statystyka projektu}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{statystyki}
+  \caption{Statystyka}
+\end{figure}
 \chapter{Zasoby i koszty}
 \begin{figure}[H]
 \centering
@@ -63,11 +87,11 @@ W trakcie realizacji projektu należy wziąć pod uwagę następujące czynniki 
   \caption{Zasoby i koszty}
   \label{zasoby}
 \end{figure}
-
+\newpage
 Charakterystyka zasobów:
 
 \begin{center}
-    \begin{tabular}{ | l | p{5cm} | p{5cm} |}
+    \begin{longtable}{ | l | p{5cm} | p{5cm} |}
     \hline
     Nazwa zasobu & Wymagania & Odpowiedzialności \\ \hline
     Project Manager & 
@@ -146,9 +170,9 @@ Charakterystyka zasobów:
 	\end{itemize}	    
      & 
 	\begin{itemize}
-	\item[•]
-	\item[•]
-	\item[•]
+	\item[•] wyszukiwanie błędów i naprawa
+	\item[•] raportowanie wystąpienie błędów
+	\item[•] konsultacje z osobami odpowiedzialnymi za implementację
 	\end{itemize}
 	\\ \hline
     Testing Engineer & 
@@ -172,7 +196,7 @@ Charakterystyka zasobów:
 	\end{itemize}
 	\\ \hline
     \hline
-    \end{tabular}
+    \end{longtable}
 \end{center}
 
 \chapter{Ścieżki komunikacji}
@@ -189,6 +213,30 @@ Komunikacja z członkami innych zespołów zaangażowanych w projekt odbywać si
 \end{figure}
 
 \chapter{Diagram sieciowy (następstwa zadań)}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{network1}
+  \caption{Diagram sieciowy cz.1}
+  \label{struktura1}
+\end{figure}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{network2}
+  \caption{Diagram sieciowy cz.2}
+  \label{struktura1}
+\end{figure}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{network3}
+  \caption{Diagram sieciowy cz.3 }
+  \label{struktura1}
+\end{figure}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{network4}
+  \caption{Diagram sieciowy cz.4}
+  \label{struktura1}
+\end{figure}
 \chapter{Struktura podziału pracy (Work Breakdown Structure) oraz przypisanie zasobów}
 \begin{figure}[H]
 \centering
@@ -249,6 +297,12 @@ Komunikacja z członkami innych zespołów zaangażowanych w projekt odbywać si
 \end{figure}
 \begin{figure}[H]
 \centering
+  \includegraphics[width=\linewidth]{raport_koszt2}
+  \caption{Raport - koszt}
+  \label{raport_koszt}
+\end{figure}
+\begin{figure}[H]
+\centering
   \includegraphics[width=\linewidth]{raport_praca}
   \caption{Raport - przegląd pracy}
   \label{raport_praca}
@@ -267,7 +321,66 @@ Komunikacja z członkami innych zespołów zaangażowanych w projekt odbywać si
   \caption{Raport - przegląd projektu}
   \label{raport_przeglad_projektu}
 \end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{raport_zasoby}
+  \caption{Raport - zasoby}
+  \label{raport_zadania_krytyczne}
+\end{figure}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\linewidth]{raport_zasoby2}
+  \caption{Raport - zasoby}
+  \label{raport_zadania_krytyczne}
+\end{figure}
 \chapter{Estymacja projektu informatycznego}
 \section{Zarządzanie jakością}
+Zarządzanie jakością w projekcie można określić jako dbałość o zgodność dostarczanych produktów projektu z wymaganiami przed nimi stawianymi, a w konsekwencji o jako dbałość o osiągnięcie przez projekt rezultatu zgodnego z celem biznesowym przyjętym w momencie podejmowanie decyzji o jego uruchomieniu.\newline
+Na proces zarządzania jakością składają się następujące elementy:
+\begin{enumerate}
+\item \textbf{Zapewnienie jakości} - według normy ISO 9000, są to wszystkie zaplanowane i systematyczne działania, które są niezbędne do uzyskania i utrzymania odpowiedniego stopnia wiarygodności, zapewniający, że wyrób spełni ustalone wymagania jakościowe
+\item \textbf{Planowanie jakości} - jest to zaplanowanie działań zmierzających do zapewnienia jakości. W planie powinny być wzięte pod uwagę następujące kategorie działań:
+\begin{itemize}
+\item[•] przeglądy kontraktów
+\item[•] sterowanie analizą wymagań, projektowaniem, wdrożeniam
+\item[•] zaopatrzenie i kontrola kooperantów
+\item[•] kontrola i badanie oprogramowania w toku produkcji
+\item[•] obsługa produktów projektowych niespełniających wymagań
+\item[•] instalacje, wdrożenia
+\item[•] serwis
+\item[•] szkolenie personelu
+\item[•] wsparcie organizacyjne projektu
+\item[•] audyty wewnętrzne i przeglądy systemu jakości inicjowane przez kierownictwo projektu
+\end{itemize}
+\item \textbf{Nadzorowanie jakości} - pozytywne, czy negatywne wyniki kontroli jakości są źródłem decyzji projektowych, które zmierzają do:
+\begin{itemize}
+\item[•] dokumentowania działań
+\item[•] podjęcia działań korekcyjnych
+\item[•] śledzenia ich realizacji
+\item[•] weryfikacji ich skuteczności
+\end{itemize}
+\item \textbf{Doskonalenie jakości} - do podstawowych narzędzi doskonalenia jakości należą:
+\begin{itemize}
+\item[•] inżynieria wymagań
+\item[•] metoda projektowania
+\item[•] weryfikacja i walidacja
+\item[•] przeglądy techniczne oprogramowania
+\item[•] testowanie oprogramowania
+\item[•] dowodzenie poprawności
+\item[•] symulacje i prototypowanie
+\item[•] śledzenie wymagań
+\end{itemize}
+\end{enumerate}
 \section{Ocena ryzyka}
+\subsection{Diagnoza}
+W trakcie pierwszego etapu zidentyfikowane zostały rodzaje ryzyka. Są to zdarzenia niepożądane, których wystąpienie będzie miało wpływ na koszty realizacji projektu. Zdarzenia te zostały zestawione w postaci listy (1.1.7). Przeanalizowano, które z zdarzenia mogą mieć kluczowy wpływ na realizację projektu. Są to zdarzenia związane z uszkodzeniem sprzętu.
+\subsection{Ocena}
+Ocena ryzyka zawiera analizę wystąpienia niekorzystnych zdarzeń pod kątem prawdopodobieństwa i wystąpienia, jak również związanych z tym kosztów. Efektem tego etapu jest określenie łącznego ryzyka projektu oraz zaplanowanie działań zapobiegawczych.
+\subsection{Działania zapobiegawcze}
+Następnym etapem było zdefiniowanie, jakie działania powinny zostać podjęte w razie wystąpienia danego ryzyka. Zredukowanie dotkliwości może zostać uzyskane poprzez wyznaczenie alternatywnych ścieżek osiągnięcia celu. 
+\subsection{Odpowiedzialność}
+Do osoby Project Managera przypisana została odpowiedzialność za śledzenie ryzyka. 
 \section{Ocena kosztów}
+Ocena kosztów w projekcie oparta była o metodą bottom-up. Oznacza to, że estymacja została przeprowadzona dla wszystkich komponentów, składających się na etapy projektu, po czym przeanalizowano koszty dla poszczególnych etapów. Finalny koszt projektu uzyskany został przez zsumowanie kosztów dla poszczególnych etapów.
+Szacowanie kosztów poszczególnych komponentów zrealizowane było poprzez estymację przez analogię. Warunkiem koniecznym możliwości wykorzystania tej metody jest posiadanie doświadczenia wynikającego z realizacji podobnych projektów. Dane zebrane w trakcie realizacji wzmiankowanych projektów muszą pozwolić na ustalenie podobieństw i różnic pomiędzy projektami, ponieważ tylko wówczas możliwe jest oszacowanie czasu i zasobów niezbędnych do realizacji zadania, jak i kosztów z nimi związanych.  
